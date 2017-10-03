@@ -80,9 +80,7 @@ ActiveRecord::Schema.define(version: 20171003191305) do
     t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "host"
-    t.boolean "admin"
-    t.boolean "fan"
+    t.string "role"
     t.string "bio"
     t.string "username"
     t.string "company"
