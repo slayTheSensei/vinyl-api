@@ -1,22 +1,19 @@
 #!/bin/bash
 
 API="${API_ORIGIN:-http://localhost:4741}"
-URL_PATH="/events"
-NAME="Bounce House"
-ARTIST="2"
-USER="1"
+URL_PATH="/artist_events"
+ARTIST=2
+EVENT=2
 
 
 curl "${API}${URL_PATH}" \
   --request POST \
   --header "Content-Type: application/json" \
-  --header "Authorization: Token token=$TOKEN" \
+  --header "Authorqization: Token token=$TOKEN" \
   --data '{
-    "event": {
-      "name": "'"${NAME}"'",
-      "user_id": "'"${USER}"'",
+    "artist_event": {
+      "event_id": "'"${EVENT}"'",
       "artist_id": "'"${ARTIST}"'"
-
     }
   }'
 

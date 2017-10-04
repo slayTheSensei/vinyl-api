@@ -1,5 +1,5 @@
 class ArtistEventSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :artist
+  attributes :id, :artists, :events
+  has_many :artists
   has_one :event
 end
