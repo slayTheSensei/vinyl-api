@@ -2,7 +2,7 @@
 
 API="${API_ORIGIN:-http://localhost:4741}"
 URL_PATH="/artists"
-NAME="DJ Slay"
+NAME="DJ Klassic"
 LOCATION="Providence, RI"
 BIO="A DJ that slays"
 GENRE="House"
