@@ -1,5 +1,5 @@
 class DropRoster < ActiveRecord::Migration[5.1]
   def change
-    drop_table :roster
+    drop_table :rosters
   end
 end
