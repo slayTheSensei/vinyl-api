@@ -1,6 +1,6 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
+API="${API_ORIGIN:-https://vinyl-backend-api.herokuapp.com}"
 URL_PATH="/rosters"
 ID="1"
 
@@ -12,7 +12,7 @@ curl "${API}${URL_PATH}" \
   --header "Authorqization: Token token=$TOKEN" \
   --data '{
     "roster": {
-      "id": "'"${ID}"'"
+      "user_id": "'"${ID}"'"
     }
   }'
 

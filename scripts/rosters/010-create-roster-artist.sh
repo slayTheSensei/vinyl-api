@@ -1,8 +1,8 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
+API="${API_ORIGIN:-https://vinyl-backend-api.herokuapp.com}"
 URL_PATH="/artist_rosters"
-ARTIST=7
+ARTIST=4
 ROSTER=1
 
 
