@@ -1,5 +1,4 @@
 class RosterSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :artist
+  attributes :id, :artists, :artist_rosters
   has_one :user
 end

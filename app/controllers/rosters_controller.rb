@@ -46,6 +46,6 @@ class RostersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def roster_params
-      params.require(:roster).permit(:artist_id, :user_id)
+      params.require(:roster).permit(:user_id)
     end
 end

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
+API="${API_ORIGIN:-https://vinyl-backend-api.herokuapp.com/}"
 URL_PATH="/artists"
-NAME="DJ Klassic"
+NAME="DJ DK"
 LOCATION="Providence, RI"
 BIO="A DJ that slays"
 GENRE="House"

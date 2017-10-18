@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :artist_rosters
   resources :rosters
   resources :artist_events
   resources :user_events

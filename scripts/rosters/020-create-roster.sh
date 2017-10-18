@@ -1,9 +1,8 @@
 #!/bin/bash
 
 API="${API_ORIGIN:-http://localhost:4741}"
-URL_PATH="/events"
-VENUE="URI"
-NAME="Drunk Coders"
+URL_PATH="/rosters"
+ID="1"
 
 
 
@@ -12,9 +11,8 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --header "Authorqization: Token token=$TOKEN" \
   --data '{
-    "event": {
-      "name": "'"${NAME}"'",
-      "venue": "'"${VENUE}"'"
+    "roster": {
+      "id": "'"${ID}"'"
     }
   }'
 

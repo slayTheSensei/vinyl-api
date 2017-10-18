@@ -1,5 +1,5 @@
 class UserEventSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :event
   has_one :user
   has_one :event
 end
