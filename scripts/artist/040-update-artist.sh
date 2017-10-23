@@ -1,9 +1,9 @@
 #!/bin/bash
 
-API="${API_ORIGIN:-http://localhost:4741}"
+API="${API_ORIGIN:-https://vinyl-backend-api.herokuapp.com}"
 URL_PATH="/artists"
-ID="/2"
-NAME="Where's Nasty"
+ID="/1"
+IMAGE="https://i.imgur.com/oNIxDL2.jpg"
 
 
 curl "${API}${URL_PATH}${ID}" \
@@ -11,7 +11,7 @@ curl "${API}${URL_PATH}${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "artist": {
-      "name": "'"${NAME}"'"
+      "image": "'"${IMAGE}"'"
     }
   }'
 
